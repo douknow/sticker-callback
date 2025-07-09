@@ -43,8 +43,8 @@ app.get("/api/count", async (req, res) => {
 });
 
 app.post('/message', async (req, res) => {
-  const { message } = req.body;
-  console.log(message);
+  const body = req.body;
+  console.log(body);
   res.send({
     code: 0,
   });
